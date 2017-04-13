@@ -1,6 +1,6 @@
 //Create variables for packages needed
 
-var Flashcard = require("./flashcard");
+var Flashcard = require("./flashcards");
 var fs = require("fs");
 var inquirer = require("inquirer");
 
