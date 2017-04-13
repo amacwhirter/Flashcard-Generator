@@ -1,0 +1,25 @@
+{
+  "name": "flashcardgenerator",
+  "version": "1.0.0",
+  "description": "GT week 11 Homework",
+  "main": "CLI.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amacwhirter/Flashcard-Generator.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "adm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amacwhirter/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/amacwhirter/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.0.6"
+  }
+}
