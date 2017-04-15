@@ -4,8 +4,6 @@
 
 var inquirer = require("inquirer");
 var fs = require("fs");
-var card = "";
-var clozeCardMade = "";
 
 //============================================Constructors=============================================
 
