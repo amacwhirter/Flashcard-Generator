@@ -1,0 +1,3 @@
+{"text":"BIM stands for Building Information Modeling","cloze":"BIM","study":"stands for Building Information Modeling"}
+{"front":"What does BIM stand for?","back":"Building Information Modeling"}
+{"front":"What does BIM stand for?","back":"Building Information Modeling"}
