@@ -23,28 +23,31 @@ function ClozeCard(text, cloze, partial){
 }
 
 
-//=================================starting prompt question for direction=========================
+//=================================Starting prompt question for direction=========================
 
+function startPrompt(){
 inquirer.prompt([{
 
         type: "list",
-        name: "cardType",
+        name: "type",
         message: "What would you like to do?",
-        choices: ["Create Basic Card", "Create ClozeCard", "Study!"]
+        choices: ["Create Basic Card", "Create Cloze Card", "Study!"]
 
-}]).then(function(cardInputSetup) {
-    if (cardInputSetup.cardType === "Create Basic Card") {
+}]).then(function(user) {
+    if (user.type === "Create Basic Card") {
         makeBasicCard();
     }
-    else if (cardInputSetup.cardType === "Create ClozeCard"){
+    else if (user.type === "Create Cloze Card"){
         makeClozeCard();
     }
     else{
         studyCards();
     }
 });
+}
+startPrompt();
 
-//=========================================basic card function=========================================
+//=========================================Basic card function=========================================
 
 function makeBasicCard(){
   return inquirer.prompt([
@@ -71,6 +74,20 @@ function makeBasicCard(){
             if (err) {
               console.log(err);
               }
+          });
+          inquirer.prompt([
+            {
+              type:"confirm",
+              name:"confirm",
+              message:"Do you want to write another card?",
+              default: true
+            }
+          ]).then(function(userConfirm){
+            if(userConfirm.confirm === true){
+              makeBasicCard();
+            }else{
+              startPrompt();
+            }
           });
         });
 }
@@ -104,6 +121,20 @@ function makeClozeCard(){
             if (err) {
               console.log(err);
               }
+          });
+          inquirer.prompt([
+            {
+              type:"confirm",
+              name:"confirm",
+              message:"Do you want to write another card?",
+              default: true
+            }
+          ]).then(function(userConfirm){
+            if(userConfirm.confirm === true){
+              makeBasicCard();
+            }else{
+              startPrompt();
+            }
           });
         });
 }

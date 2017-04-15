@@ -1,3 +1,9 @@
 {"text":"BIM stands for Building Information Modeling","cloze":"BIM","study":"stands for Building Information Modeling"}
 {"front":"What does BIM stand for?","back":"Building Information Modeling"}
-{"front":"What does BIM stand for?","back":"Building Information Modeling"}
+{"front":"What is 4D in relation to BIM modeling?","back":"Scheduling"}
+{"text":"5D is where you use the BIM model for estimating.","cloze":"5D","partial":"is where you use the BIM model for estimating."}
+{"front":"What does XD stand for in relation to BIM modeling?","back":"Special analysis"}
+{"text":"Oilers will win the Stanley Cup.","cloze":"Oilers","partial":"will win the Stanley Cup."}
+{"front":"Who will win the Stanley Cup?","back":"Oilers"}
+{"front":"Who is the best dog in the world?","back":"Shiya"}
+{"front":"What is my favourite number?","back":"10"}
